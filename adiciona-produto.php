@@ -9,6 +9,7 @@
     $preco = $_POST["preco"];
     $descricao = $_POST["descricao" ];
     $categoria_id = $_POST["categoria_id"];
+    $usado = $_POST["usado"];
 
 	if(insereProduto($conexao, $nome, $preco, $descricao,$categoria_id)) { ?>
 	    <p class="text-success">Produto <?php echo $nome?>, com valor igual à <?=$preco?> foi adicionado com sucesso!</p>
