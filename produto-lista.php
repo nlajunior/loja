@@ -29,6 +29,10 @@
 	  <td>
 	    <?=$produto['categoria_nome']?></td>
 	  </td>
+          <td>
+	     <a class = "btn btn-primary" href ="produto-altera-formulario.php?id=<?=$produto['id']?>">alterar</a>	
+          </td>
+	  
 	 <td>
            <form action = "remove-produto.php" method = "Post">
                <input type  = "hidden" name = "id" value = "<?=$produto['id']?>">
