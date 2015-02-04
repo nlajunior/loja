@@ -4,7 +4,7 @@
     include("banco-categoria.php");
     $categorias = listaCategorias($conexao);
 ?>
-	<h1>Formulário de produto</h1>
+	<h1>Adicionando produto</h1>
 
 	<form action = "adiciona-produto.php" method = "Post">
 	 <table class = "table">
