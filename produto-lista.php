@@ -9,7 +9,15 @@
 <?php }?>
 
 <table class = "table table-striped table-bordered" >
-   <?php
+   <tr>
+    <th>Nome</th>
+    <th>Valor</th>
+    <th>Descrição</th>
+    <th>Tipo</td>
+    <td>Ações</td>
+    <td></td>
+   </tr>
+     <?php
        $produtos = listaProdutos($conexao);
        foreach($produtos as $produto): ?>
        <tr>
