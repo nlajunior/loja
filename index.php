@@ -1,21 +1,8 @@
+<?php include("cabecalho.php");?>
 
-<?php include("cabecalho.php")?>
-<?php include("logica-usuario.php")?>
+<?php include("logica-usuario.php");?>
 
-<?php if(isset($_GET["logout"]) && $_GET["logout"]==true){?>
-       <p class = "alert-success">Deslogado com sucesso!</a>
-<?php }?>
-<?php if(isset($_GET["login"]) && $_GET["login"]==true){?>
-       <p class = "alert-success">Logado com sucesso!</a>
-<?php }?>
 
-<?php if(isset($_GET["login"]) && $_GET["login"]==false){?>
-      <p class = "alert-danger">Usuário ou senha inválido</a>
-<?php } ?>
-
-<?php if (isset($_GET["falhaDeSeguranca"]) && $_GET["falhaDeSeguranca"]==true) { ?>
-      <p class = "alert-danger">Você não tem acesso"</a>
-<?php } ?>
 
    <h2>Bem Vindo!</h2>
    <?php if(usuarioEstaLogado()){?>
@@ -41,4 +28,3 @@
    </form>
   <?php } ?>
 <?php (include "rodape.php")?>
-		
